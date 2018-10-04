@@ -4,9 +4,16 @@ This is our BE Project based on Blockchains where we are building e-Voting Dapp 
 
 
 
-## Authors : ##
+## Contributors : ##
 
 *	Anish Pawar
 * 	Prasad Pathak
 *	Pabitra Parida
 * 	Riya Nagpal
+
+
+
+## Problem Statement : ##
+
+> To design a next generation secure, transparent, tamper proof voting system built on the
+foundations of the blockchain.
