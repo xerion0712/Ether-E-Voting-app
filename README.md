@@ -28,4 +28,6 @@ In order to build and run our project we need a few dependencies :
 
 NPM comes with Node.js. You can check if you have NPM by typing the following in your terminal:
 
-'$ node -v'
+'''
+$ node -v
+'''
