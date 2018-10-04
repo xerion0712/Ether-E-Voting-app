@@ -73,3 +73,44 @@ You can install the free version by clicking [here](https://www.sublimetext.com/
 Optional but highly recommended to easily read and write Solidity code, which may not be highlighted properly on some editors.
 
 You can install ["Ethereum Package"](https://packagecontrol.io/packages/Ethereum) that provides accurate syntax highlighting for Solidity.
+
+<br>
+
+## How to run ##
+
+### Step 1. Clone the project ###
+
+`git clone https://github.com/anish2197/Voting-dApp`
+
+### Step 2. Install dependencies ###
+
+Install NPM, Truffle, Ganache and Metamask.
+
+### Step 3. Start Ganache ###
+
+Open the Ganache GUI client. This will start the local in-memory blockchain instance. Note the RPC server address, we will need it later to connect to the blockchain.
+
+### Step 4. Compile and Deploy the Smart Contract ###
+
+Open the bash terminal in your project folder. Run the following command :
+`$ truffle migrate --reset`
+This will run the preloaded *Migrations.sol* which will migrate to our contract *Election.sol*. Since the contents of blockchain cannot be altered, we need to reset the contract every time we restart Ganache.
+
+### Step 5. Run develeopment server ###
+
+Open another bash terminal in your project folder. This will be used to start the server. Run the following command :
+`$ npm run dev`
+This should automatically open a window in your browser with the client-side application.
+
+### Step 6. Configure Metamask ###
+
+* Register a free account using the Metamask GUI and login in your account.
+* We'll use Metamask to log into the blockchain network. Click on "Main Ethereum Network" and select "Custom RPC Server". Paste the RPC server address from Step 3. and hit save. You are now on the blockchain network.
+* Open Ganache GUI. We now need to log in to the blockchain using one of the 10 accounts provided by Metamask. Select any one of your choice and copy its private key using the key icon on the right side of the GUI.
+* Open Metamask GUI. Click on the circular icon on the top right side of the GUI. Select on "Import Account". Paste the private key. You have now successfully logged in the blockchain with a valid account.
+
+### Step 7. Run the front end application ###
+
+Visit this URL in your browser: http://localhost:3000.
+You may need to restart your browser.
+
