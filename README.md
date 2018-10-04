@@ -92,8 +92,8 @@ Open the Ganache GUI client. This will start the local in-memory blockchain inst
 
 ### Step 4. Compile and Deploy the Smart Contract ###
 
-Open the bash terminal in your project folder. Run the following command :
-`$ truffle migrate --reset`
+Open the bash terminal in your project folder. Run the following command :<br>
+`$ truffle migrate --reset` <br>
 This will run the preloaded *Migrations.sol* which will migrate to our contract *Election.sol*. Since the contents of blockchain cannot be altered, we need to reset the contract every time we restart Ganache.
 
 ### Step 5. Run develeopment server ###
@@ -111,6 +111,6 @@ This should automatically open a window in your browser with the client-side app
 
 ### Step 7. Run the front end application ###
 
-Visit this URL in your browser: http://localhost:3000.
+Visit this URL in your browser: http://localhost:3000.<br>
 You may need to restart your browser.
 
