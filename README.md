@@ -124,8 +124,8 @@ You may need to restart your browser.
 ---
 
 1. Can read from blockchain and display the list of candidates.
-2. Keep live track of the data of the candidates(i.e. vote count).
-3. Vote on behalf of a account.
+2. Keep a live track of the data of the candidates(i.e. vote count).
+3. Vote on behalf of an account.
 
 <br>
 
@@ -144,10 +144,10 @@ You may need to restart your browser.
 ---
 
 5 test cases have been designed to test the behaviour of the dapp.<br>
-Testing is done by writing a Javascript to simulate the client-side interaction. [Mocha Framework](https://mochajs.org/) and [Chai Libraries](https://www.chaijs.com/) are used for this purpose, which come preloaded with Node.js<br>
+Testing is done by writing a Javascript to simulate the client-side interaction. [Mocha Testing Framework](https://mochajs.org/) and [Chai Assertion Library](https://www.chaijs.com/) are used for this purpose, which come bundled with Truffle Framework.<br>
 You can find these Javascripts in the following path : `./Elections/test/election.js`<br>
 
-Use the following command to run the Javascript for the tests : <br>
+Use the following command in the bash to run the Javascript for the tests : <br>
 `$ truffle test`
 <br>
 
