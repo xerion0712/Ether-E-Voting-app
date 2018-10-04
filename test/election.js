@@ -48,7 +48,8 @@ contract("Election",function(accounts)
 			return electionInstance.vote(candID,{from :accounts[0]});	//Content in {} is the metadata passed to the function and select the account which will vote
 		}).then(function(receipt)										//Trigger a promise chain and return the receipt of the vote transaction
 		{
-			return electionInstance.votersList(accounts[0]);			//Read the account mapping, returns a bool value
+			
+		return electionInstance.votersList(accounts[0]);			//Read the account mapping, returns a bool value
 		}).then(function(voted)
 		{
 			assert(voted,"The voter was marked as voted");				//Check if the returned bool value is true

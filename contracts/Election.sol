@@ -20,6 +20,13 @@ contract Election
 	
 	mapping(uint => Candidate) public candidateList;			//Getter function automatically declared to access candidates
 
+	/*
+	event votedEvent
+	(
+		uint indexed _candidateID 
+	);
+	*/
+
 	
 	function Election () public							//Constructor
 	{
@@ -35,8 +42,17 @@ contract Election
 
 	function vote (uint _candidateID) public				//Increase vote of candidate by one
 	{
+		
+
+		require(!votersList[msg.sender]);								//Verify they havent voted before
+		require(_candidateID > 0 && _candidateID <= candidateCount);	//Check if the candidate is valid
+		
+		
+
 		votersList[msg.sender] = true;						//Set the voters address to true
 
 		candidateList[_candidateID].voteCount ++;
+
+		//votedEvent(_candidateID);							//Trigger event after voting to refresh the page
 	}
 }
