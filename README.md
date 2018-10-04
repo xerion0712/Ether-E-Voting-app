@@ -30,7 +30,6 @@ foundations of the blockchain.*
 ## Dependencies : ##
 
 <br>
-<br>
 
 In order to build and run our project we need a few dependencies :
 
@@ -42,7 +41,7 @@ The first dependency is NPM which comes with Node.js. You can check if you have 
 
 `$ node -v`
 
-You can download Node.js on [https://nodejs.org/en]
+You can download Node.js [here](https://nodejs.org/en)
 
 <br>
 
@@ -60,7 +59,7 @@ You can install Truffle by typing the following in your terminal :
 
 Ganache is a local in-memory blockchain. It helps us simulate an Ethereum blockchain with 10 accounts which are preloaded 100 fake ether each.
 
-You can download Truffle Framework from the following link [https://truffleframework.com/ganache]
+You can download Truffle Framework by clicking [here](https://truffleframework.com/ganache)
 
 <br>
 
