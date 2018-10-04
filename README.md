@@ -1,5 +1,6 @@
+---
 # e-Voting Distributed App based on Ethereum Smart Contracts #
-
+---
 <br>
 
 This is our BE Project based on Blockchains where we are building e-Voting Dapp using Truffle Framework.
@@ -7,8 +8,9 @@ This is our BE Project based on Blockchains where we are building e-Voting Dapp 
 <br>
 <br>
 
+---
 ## Contributors : ##
-
+---
 *	Anish Pawar
 * 	Prasad Pathak
 *	Pabitra Parida
@@ -17,8 +19,9 @@ This is our BE Project based on Blockchains where we are building e-Voting Dapp 
 <br>
 <br>
 
+---
 ## Problem Statement : ##
-
+---
 <br>
 
 *To design a next generation secure, transparent, tamper proof voting system built on the
@@ -27,8 +30,9 @@ foundations of the blockchain.*
 <br>
 <br>
 
+---
 ## Dependencies : ##
-
+---
 In order to build and run our project we need a few dependencies :
 
 ### Node Packet Manager (NPM) ###
@@ -73,11 +77,11 @@ You can install the free version by clicking [here](https://www.sublimetext.com/
 Optional but highly recommended to easily read and write Solidity code, which may not be highlighted properly on some editors.
 
 You can install ["Ethereum Package"](https://packagecontrol.io/packages/Ethereum) that provides accurate syntax highlighting for Solidity.
-
 <br>
 
+---
 ## How to run ##
-
+---
 ### Step 1. Clone the project ###
 
 `git clone https://github.com/anish2197/Voting-dApp`
@@ -98,8 +102,7 @@ This will run the preloaded *Migrations.sol* which will migrate to our contract 
 
 ### Step 5. Run develeopment server ###
 
-Open another bash terminal in your project folder. This will be used to start the server. Run the following command :    
-`$ npm run dev`
+Open another bash terminal in your project folder. This will be used to start the server. Run the following command :<br>`$ npm run dev`<br>
 This should automatically open a window in your browser with the client-side application.
 
 ### Step 6. Configure Metamask ###
@@ -114,3 +117,61 @@ This should automatically open a window in your browser with the client-side app
 Visit this URL in your browser: http://localhost:3000.<br>
 You may need to restart your browser.
 
+<br>
+
+---
+## Functionality of the dapp as of v0.4 ##
+---
+
+1. Can read from blockchain and display the list of candidates.
+2. Keep live track of the data of the candidates(i.e. vote count).
+3. Vote on behalf of a account.
+
+<br>
+
+---
+## Features planned for future releases ##
+---
+
+1. Set a timer for the elections.
+2. Announce the winner after the timer goes off.
+3. Voter registration, reject unregistered voters.
+
+<br>
+
+---
+## Testing ##
+---
+
+5 test cases have been designed to test the behaviour of the dapp.<br>
+Testing is done by writing a Javascript to simulate the client-side interaction. [Mocha Framework](https://mochajs.org/) and [Chai Libraries](https://www.chaijs.com/) are used for this purpose, which come preloaded with Node.js<br>
+You can find these Javascripts in the following path : `./Elections/test/election.js`<br>
+
+Use the following command to run the Javascript for the tests : <br>
+`$ truffle test`
+<br>
+
+#### Test 1 ####
++ Test to verify if the candidate count is correct.
++ Fails if the candidate count is different than 2.
+
+#### Test 2 ####
++ Test to verify the candidate details.
++ Fails if the candidate name, ID and vote count is not valid.
++ Passing of these 2 tests indicates that the global variables have been correctly initialized by the constructor().
+
+#### Test 3 ####
++ Test to check the behaviour of the vote.
++ Checks for two things:
+	1. Vote has been registered into the blockchain
+	2. Vote has only been incremented by 1
+
+#### Test 4 ####
++ Test to check if the chosen candidate ID on the vote is valid.
++ Fails if the chosen ID is out of bounds.
+
+#### Test 5 ####
++ Test to check if the dapp allows double voting.
++ Fails when we try to vote for the second time from an account and a proper exception is thrown.
+
+---
