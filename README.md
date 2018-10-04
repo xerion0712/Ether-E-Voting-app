@@ -98,7 +98,7 @@ This will run the preloaded *Migrations.sol* which will migrate to our contract 
 
 ### Step 5. Run develeopment server ###
 
-Open another bash terminal in your project folder. This will be used to start the server. Run the following command :
+Open another bash terminal in your project folder. This will be used to start the server. Run the following command :    
 `$ npm run dev`
 This should automatically open a window in your browser with the client-side application.
 
