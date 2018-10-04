@@ -4,4 +4,9 @@ This is our BE Project based on Blockchains where we are building e-Voting Dapp 
 
 
 
-#$
+## Authors : ##
+
+*	Anish Pawar
+* 	Prasad Pathak
+*	Pabitra Parida
+* 	Riya Nagpal
