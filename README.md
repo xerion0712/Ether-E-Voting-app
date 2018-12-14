@@ -47,7 +47,7 @@ You can download Node.js [here](https://nodejs.org/en)
 
 Next dependency is Truffle Framework which allows us to build decentralized applications on Ethereum blockchain. It also provides us with tools which allow us to deploy smart contracts using Solidity language. It aslo helps us develop client side applications.
 
-You can install Truffle by typing the following in your terminal : 
+You can install Truffle by running the following command in your terminal : 
 
 `$ npm install -g truffle`
 
@@ -76,7 +76,7 @@ You can install the free version by clicking [here](https://www.sublimetext.com/
 
 Optional but highly recommended to easily read and write Solidity code, which may not be highlighted properly on some editors.
 
-You can install ["Ethereum Package"](https://packagecontrol.io/packages/Ethereum) that provides accurate syntax highlighting for Solidity.
+You can install ["Ethereum Package"](https://packagecontrol.io/packages/Ethereum) that provides syntax highlighting for Solidity.
 <br>
 
 ---
@@ -97,8 +97,8 @@ Open the Ganache GUI client. This will start the local in-memory blockchain inst
 ### Step 4. Compile and Deploy the Smart Contract ###
 
 Open the bash terminal in your project folder. Run the following command :<br>
-`$ truffle migrate --reset` <br>
-This will run the preloaded *Migrations.sol* which will migrate to our contract *Election.sol*. Since the contents of blockchain cannot be altered, we need to reset the contract every time we restart Ganache.
+`$ truffle.cmd migrate --reset` <br>
+This will deploy our contract *Election.sol*. Since the contents of blockchain cannot be altered, we need to reset the contract every time we restart Ganache.
 
 ### Step 5. Run develeopment server ###
 
