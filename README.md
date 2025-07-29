@@ -1,36 +1,3 @@
----
-# e-Voting Distributed App based on Ethereum Smart Contracts #
----
-<br>
-
-This is our BE Project based on Blockchains where we are building e-Voting Dapp using Truffle Framework.
-
-<br>
-<br>
-
----
-## Contributors : ##
----
-*	Anish Pawar
-* 	Prasad Pathak
-*	Pabitra Parida
-* 	Riya Nagpal
-
-<br>
-<br>
-
----
-## Problem Statement : ##
----
-<br>
-
-*To design a next generation secure, transparent, tamper proof voting system built on the
-foundations of the blockchain.*
-
-<br>
-<br>
-
----
 ## Dependencies : ##
 ---
 In order to build and run our project we need a few dependencies :
@@ -84,7 +51,7 @@ You can install ["Ethereum Package"](https://packagecontrol.io/packages/Ethereum
 ---
 ### Step 1. Clone the project ###
 
-`git clone https://github.com/anish2197/Voting-dApp`
+`git clone https://github.com/xerion0712/Ether-E-Voting-app.git`
 
 ### Step 2. Install dependencies ###
 
